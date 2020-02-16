@@ -11,11 +11,11 @@
 :root {
     --color-white: #ffffff;
     --color-primary: #288ae4;
-    --color-secondary: #f6c791;
-    --color-secondary-overlay: rgba(246, 199, 145, 0.1);
+    --color-secondary: #f8c889;
     --color-icons: #fed131;
     --color-tertiary: #166bbe;
     --color-text: #444;
+    --color-btn: #414042;
 }
 
 * {
@@ -500,6 +500,7 @@ h6,
     line-height: 1;
     width: auto;
     height: auto;
+    color: var(--color-secondary);
 }
 
 #hero .carousel-indicators li {
@@ -513,19 +514,19 @@ h6,
     letter-spacing: 1px;
     display: inline-block;
     padding: 12px 32px;
-    border-radius: 5px;
-    transition: 0.5s;
+    border-radius: 1.875em;
+    transition: all 0.5s ease;
     line-height: 1;
     margin: 10px;
-    color: #fff;
+    color: var(--color-white);
     -webkit-animation-delay: 0.8s;
     animation-delay: 0.8s;
-    border: 0;
-    background: #428bca;
+    border: 1px solid var(--color-primary);
+    background: var(--color-primary);
 }
 
 #hero .btn-get-started:hover {
-    background: #1c5c93;
+    filter: opacity(0.8);
 }
 
 @media (max-width: 768px) {
