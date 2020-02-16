@@ -10,7 +10,7 @@
 --------------------------------------------------------------*/
 :root {
     --color-white: #ffffff;
-    --color-primary: #288ae4;
+    --color-primary: #0e4480;
     --color-secondary: #f8c889;
     --color-icons: #fed131;
     --color-tertiary: #166bbe;
@@ -33,7 +33,7 @@ a {
 }
 
 a:hover {
-    color: var(--color-icons);
+    color: var(--color-secondary);
     text-decoration: none;
 }
 
@@ -72,9 +72,8 @@ h6,
 }
 
 .back-to-top:hover {
-    color: #fff;
-    background: #629fd3;
-    transition: background 0.2s ease-in-out;
+    color: var(--color-secondary);
+    transition: all 0.2s ease-in-out;
 }
 
 /*--------------------------------------------------------------
@@ -83,7 +82,7 @@ h6,
 #topbar {
     background: var(--color-tertiary);
     padding: 20px 0;
-    border-bottom: 1px solid var(--color-icons);
+    border-bottom: 1px solid var(--color-secondary);
     font-size: 16px;
 }
 
@@ -98,10 +97,6 @@ h6,
     font-weight: 900;
     font-size: 20px;
 }
-
-/* #topbar .contact-info a:hover {
-    color: var(--color-icons);
-} */
 
 #topbar .contact-info i {
     color: var(--color-icons);
@@ -158,10 +153,10 @@ h6,
 }
 
 #header .logo img {
-    width: 150px;
+    width: 120px;
     position: absolute;
-    top: 10px;
-    transform: translateX(-10px);
+    top: 20px;
+    transform: translateX(-15px);
 }
 
 /*--------------------------------------------------------------
@@ -210,6 +205,7 @@ h6,
 }
 
 .nav-menu .drop-down ul {
+    width: 250px;
     display: block;
     position: absolute;
     left: 0;
@@ -451,8 +447,7 @@ h6,
 #hero h2 {
     font-family: 'Suez One', serif;
     color: #fff;
-    line-height: 64px;
-    font-size: 58px;
+    font-size: 3.675rem;
 }
 
 #hero p {
@@ -464,7 +459,7 @@ h6,
 
 #hero .carousel-inner .carousel-item {
     transition-property: opacity;
-    background-position: center top;
+    background-position: center;
 }
 
 #hero .carousel-inner .carousel-item,
@@ -517,16 +512,16 @@ h6,
     border-radius: 1.875em;
     transition: all 0.5s ease;
     line-height: 1;
-    margin: 10px;
+    margin: 10px 0;
     color: var(--color-white);
     -webkit-animation-delay: 0.8s;
     animation-delay: 0.8s;
-    border: 1px solid var(--color-primary);
-    background: var(--color-primary);
+    border: 1px solid var(--color-tertiary);
+    background: var(--color-tertiary);
 }
 
 #hero .btn-get-started:hover {
-    filter: opacity(0.8);
+    color: var(--color-secondary);
 }
 
 @media (max-width: 768px) {
@@ -620,7 +615,7 @@ section {
 }
 
 .about .icon-box:hover .icon {
-    background: var(--color-primary);
+    background: var(--color-tertiary);
 }
 
 .about .icon-box:hover .icon i {
@@ -1138,6 +1133,7 @@ section {
     padding: 20px 0 30px 0;
     margin-bottom: 30px;
     width: 100%;
+    border-bottom: 3px solid var(--color-secondary);
 }
 
 .contact .info-box i {
@@ -1145,7 +1141,7 @@ section {
     color: #428bca;
     border-radius: 50%;
     padding: 8px;
-    border: 2px dotted #9eccf4;
+    border: 2px dotted var(--color-secondary);
 }
 
 .contact .info-box h3 {
@@ -1165,6 +1161,7 @@ section {
 .contact .php-email-form {
     box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
     padding: 30px;
+    border-bottom: 3px solid var(--color-secondary);
 }
 
 .contact .php-email-form .validate {
@@ -1217,12 +1214,12 @@ section {
 .contact .php-email-form textarea {
     border-radius: 0;
     box-shadow: none;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .contact .php-email-form input::focus,
 .contact .php-email-form textarea::focus {
-    background-color: #428bca;
+    background-color: var(--color-secondary);
 }
 
 .contact .php-email-form input {
@@ -1234,7 +1231,7 @@ section {
 }
 
 .contact .php-email-form button[type='submit'] {
-    background: #428bca;
+    background: var(--color-tertiary);
     border: 0;
     padding: 10px 24px;
     color: #fff;
@@ -1242,7 +1239,7 @@ section {
 }
 
 .contact .php-email-form button[type='submit']:hover {
-    background: #6aa3d5;
+    color: var(--color-secondary);
 }
 
 @-webkit-keyframes animate-loading {
