@@ -1063,7 +1063,7 @@ section {
     display: block;
     width: 50px;
     height: 1px;
-    background: #fff;
+    background: var(--color-secondary);
     bottom: 0;
     left: calc(50% - 25px);
 }
@@ -1085,7 +1085,7 @@ section {
 }
 
 .team .member .social a:hover {
-    color: #9eccf4;
+    color: var(--color-secondary);
 }
 
 .team .member .social i {
@@ -1261,16 +1261,14 @@ section {
 }
 
 #footer {
-    background: #587187;
-    padding: 0 0 30px 0;
+    background: var(--color-tertiary);
     color: #fff;
     font-size: 14px;
 }
 
 #footer .footer-top {
-    background: #5c768d;
+    background: var(--color-primary);
     border-top: 1px solid #768fa6;
-    border-bottom: 1px solid #67839c;
     padding: 60px 0 30px 0;
 }
 
@@ -1297,7 +1295,7 @@ section {
 #footer .footer-top .social-links a {
     font-size: 18px;
     display: inline-block;
-    background: #768fa6;
+    background: var(--color-tertiary);
     color: #fff;
     line-height: 1;
     padding: 8px 0;
@@ -1310,8 +1308,7 @@ section {
 }
 
 #footer .footer-top .social-links a:hover {
-    background: #428bca;
-    color: #fff;
+    color: var(--color-secondary);
     text-decoration: none;
 }
 
@@ -1386,26 +1383,10 @@ section {
     padding: 0 20px;
     background: #428bca;
     color: #fff;
-    transition: 0.3s;
+    transition: all 0.3s;
     border-radius: 4;
 }
 
 #footer .footer-top .footer-newsletter form input[type='submit']:hover {
-    background: #5295ce;
-}
-
-#footer .copyright {
-    text-align: center;
-    padding-top: 30px;
-}
-
-#footer .credits {
-    padding-top: 10px;
-    text-align: center;
-    font-size: 13px;
-    color: #fff;
-}
-
-#footer .credits a {
-    color: #9eccf4;
+    color: var(--color-secondary);
 }
