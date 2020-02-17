@@ -153,10 +153,16 @@ h6,
 }
 
 #header .logo img {
-    width: 120px;
+    width: 7.5rem;
     position: absolute;
     top: 20px;
     transform: translateX(-15px);
+}
+
+@media (max-width: 768px) {
+    #header .logo img {
+        width: 6rem;
+    }
 }
 
 /*--------------------------------------------------------------
@@ -532,6 +538,15 @@ h6,
     #hero .carousel-item {
         background-position: center right;
     }
+
+    #hero .carousel-content.container {
+        padding: 0 40px;
+    }
+
+    #hero p {
+        width: 100%;
+        font-size: 1rem;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -782,7 +797,7 @@ section {
 
 .about-lists .content-item p {
     color: #aaaaaa;
-    font-size: 15px;
+    font-size: 16px;
     margin: 0;
     padding: 0;
 }
@@ -792,6 +807,10 @@ section {
     .about .about-content,
     .about-lists .content-item {
         padding: 40px 0;
+    }
+
+    .about-lists .content-item p {
+        color: var(--color-text);
     }
 }
 
